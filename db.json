@@ -1,0 +1,12 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "course_id": "CS001",
+      "course_name": "Angular crash course 2021",
+      "author": "Long Dang",
+      "description": "This is best course for beginner",
+      "price": 200
+    }
+  ]
+}

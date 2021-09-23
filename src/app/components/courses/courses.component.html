@@ -1,0 +1,36 @@
+<div>
+    <app-navbar></app-navbar>
+
+    <div class="container mt-5">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Serial</th>
+                    <th>CourseID</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let course of courses; let serial = index">
+                    <td>{{ serial + 1 }}</td>
+                    <td>{{ course.course_id }}</td>
+                    <td>{{ course.course_name }}</td>
+                    <td>{{ course.author }}</td>
+                    <td>{{ course.description }}</td>
+                    <td>{{ course.price }}</td>
+
+                    <td class="action d-flex">
+                        <a href="#" routerLink="/course-detail/{{ course.id }}"
+                         class="btn btn-info">View</a>
+                        <a href="#" routerLink="/course-update/{{ course.id }}" class="btn btn-primary">Update</a>
+                        <a href="#" (click)="onDeleteCourse(course)" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

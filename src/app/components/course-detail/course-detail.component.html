@@ -1,0 +1,32 @@
+<div>
+    <app-navbar></app-navbar>
+
+    <div *ngIf="course" class="container mt-5">
+        <div class="card">
+            <!-- <div class="card-header">
+                <span>Course ID: </span>
+                <span>{{ course.course_id }}</span>
+            </div> -->
+            <div class="card-body">
+                <!-- <div class="mt-3">
+                    <span class="fw-bold">Course Name: </span>
+                    <span>{{ course.course_name }}</span>
+                </div> -->
+                <div class="mt-3">
+                    <span class="fw-bold">Author: </span>
+                    <span>{{ course.author }}</span>
+                </div>
+                <div class="mt-3">
+                    <span class="fw-bold">Description: </span>
+                    <span>{{ course.description }}</span>
+                </div>
+                <div class="mt-3">
+                    <span class="fw-bold">Price: </span>
+                    <span>{{ course.price }}</span>
+                </div>
+            </div>
+        </div>
+
+        <button routerLink="/courses/" class="btn btn-success mt-3">Go back</button>
+    </div>
+</div>
