@@ -15,7 +15,9 @@
           
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input #keyword class="form-control me-2" type="search" placeholder="Search (id, name)" 
+          aria-label="Search">
+          <!-- <button routerLink="courses/?keyword={{keyword.value}" (click)="searchCourse(keyword.value)" class="btn btn-outline-success" type="submit">Search</button> -->
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>

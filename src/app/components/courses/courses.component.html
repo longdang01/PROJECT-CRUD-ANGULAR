@@ -1,7 +1,12 @@
 <div>
+    <!-- <app-navbar (onSearch)="searchCourse($event)"></app-navbar> -->
     <app-navbar></app-navbar>
 
     <div class="container mt-5">
+        <input type="text" class="form-control mb-3" [(ngModel)]="keyword"
+        (input)="searchCourse()"
+        placeholder="Search ... ">
+
         <table class="table table-bordered table-hover">
             <thead class="table-dark">
                 <tr>

@@ -7,6 +7,38 @@
       "author": "Long Dang",
       "description": "This is best course for beginner",
       "price": 200
+    },
+    {
+      "course_id": "CS002",
+      "course_name": "Machine Learning",
+      "author": "Long Dang",
+      "description": "This is future",
+      "price": "500",
+      "id": 2
+    },
+    {
+      "course_id": "CS003",
+      "course_name": "PHP Crash course",
+      "author": "Day la course so 3",
+      "description": "qwdqw",
+      "price": "123",
+      "id": 3
+    },
+    {
+      "course_id": "CS004",
+      "course_name": "HTML, CSS",
+      "author": "Long Dang",
+      "description": "This is course for beginner",
+      "price": "100",
+      "id": 4
+    },
+    {
+      "course_id": "CS005",
+      "course_name": "NodeJs",
+      "author": "Long Dang",
+      "description": "This is course back-end",
+      "price": "200",
+      "id": 5
     }
   ]
 }
